@@ -195,6 +195,7 @@ public class TeachableProvider extends ContentProvider {
 
         switch (match){
             case TUTOR:
+//                getContext().getContentResolver().notifyChange(uri, null);
                 return insertTutor(uri, values);
             default:
                 throw new UnsupportedOperationException("Unknown uri: " + uri);
@@ -214,6 +215,7 @@ public class TeachableProvider extends ContentProvider {
         } else {
             throw new android.database.SQLException("Failed to insert row into: " + uri);
         }
+
     }
 
     //    /**

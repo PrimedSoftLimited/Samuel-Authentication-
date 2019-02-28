@@ -2,7 +2,6 @@ package com.example.teachableauth;
 
 import android.content.ContentValues;
 import android.content.Intent;
-import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.os.Bundle;
@@ -52,21 +51,21 @@ public class RegisterActivity extends AppCompatActivity {
         String passwordString = password.getText().toString().trim();
         String cnfPasswordString = cnfPassword.getText().toString().trim();
 
-        User user = new User();
-        user.setFirstName(firstNameString);
-        user.setLastName(lastNameString);
-        user.setUsername(usernameString);
-        user.setEmail(emailString);
-        user.setPassword(passwordString);
+//        User user = new User();
+//        user.setFirstName(firstNameString);
+//        user.setLastName(lastNameString);
+//        user.setUsername(usernameString);
+//        user.setEmail(emailString);
+//        user.setPassword(passwordString);
+
+//        String query = "select * from TutorTable";
+//        Cursor cursor = db.rawQuery(query, null);
+//        int count = cursor.getCount();
 
         if (passwordString.equals(cnfPasswordString)){
             ContentValues values = new ContentValues();
 
-            String query = "select * from TutorTable";
-            Cursor cursor = db.rawQuery(query, null);
-            int count = cursor.getCount();
-
-            values.put(TeachableContract.TeachableEntry.UID, count);
+//            values.put(TeachableContract.TeachableEntry.UID, count);
 
             values.put(TeachableContract.TeachableEntry.COLUMN_FIRSTNAME, firstNameString);
             values.put(TeachableContract.TeachableEntry.COLUMN_LASTNAME, lastNameString);
