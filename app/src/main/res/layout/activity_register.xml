@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teachable"
+        android:textStyle="bold"
+        android:textColor="@color/colorGreen"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        style="@style/text_normal"
+        android:text="Teacher Registeration"
+        android:textColor="@color/colorBlack"
+        android:padding="@dimen/big_space"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        style="@style/editText"
+        android:id="@+id/firstname"
+        android:hint="First Name"
+        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+        android:inputType="text"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        style="@style/editText"
+        android:id="@+id/lastname"
+        android:layout_marginTop="@dimen/box_space"
+        android:hint="Last Name"
+        android:drawableLeft="@drawable/ic_email_grey_24dp"
+        android:inputType="text"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        style="@style/editText"
+        android:id="@+id/username"
+        android:layout_marginTop="@dimen/box_space"
+        android:hint="Username"
+        android:drawableLeft="@drawable/ic_account_circle_black_24dp"
+
+
+        android:inputType="text"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/phone_number_edt"
+        style="@style/editText"
+        android:layout_marginTop="@dimen/box_space"
+        android:hint="Mobile Number"
+        android:inputType="phone"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        style="@style/editText"
+        android:id="@+id/email_edit"
+        android:layout_marginTop="@dimen/box_space"
+        android:hint="Email address"
+        android:drawableLeft="@drawable/ic_email_grey_24dp"
+        android:inputType="textEmailAddress"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        style="@style/editText"
+        android:id="@+id/password_edit"
+        android:layout_marginTop="@dimen/box_space"
+        android:hint="Password"
+        android:drawableLeft="@drawable/lock"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/ic_visibility_black_24dp"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        style="@style/editText"
+        android:id="@+id/confirm_edit"
+        android:layout_marginTop="@dimen/box_space"
+        android:hint="Confirm Passwrord"
+        android:drawableLeft="@drawable/lock"
+        android:inputType="textPassword"
+        android:drawableRight="@drawable/ic_visibility_black_24dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/box_space">
+
+        <CheckBox
+            android:id="@+id/check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/agree_text"
+            style="@style/text_normal"
+            android:text="By Registering with Teachable, you agree with our"
+            android:layout_marginLeft="@dimen/large_space"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:id="@+id/TOC"
+            style="@style/text_normal"
+            android:text="Terms Of Service"
+            android:layout_marginLeft="@dimen/large_space"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_below="@id/agree_text"
+            android:textColor="@color/colorGreen"/>
+
+    </RelativeLayout>
+
+    <Button
+        style="@style/long_button"
+        android:id="@+id/btn_register"
+        android:background="@drawable/green_button"
+        android:text="Register"
+        android:gravity="center"/>
+
+</LinearLayout>

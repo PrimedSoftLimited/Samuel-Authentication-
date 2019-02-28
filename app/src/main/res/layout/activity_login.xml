@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Teachable"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
+        style="@style/text_normal"
+        android:text="Tutor Login"
+        android:textColor="@color/colorBlack"
+        android:padding="@dimen/big_space"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/email"
+        style="@style/editText"
+        android:layout_marginTop="@dimen/large_space"
+        android:hint="Email"
+        android:drawableLeft="@drawable/ic_email_grey_24dp"
+        android:inputType="textEmailAddress"/>
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/password"
+        style="@style/editText"
+        android:layout_marginTop="@dimen/box_space"
+        android:hint="Password"
+        android:drawableLeft="@drawable/lock"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/login"
+        style="@style/long_button"
+        android:background="@drawable/green_button"
+        android:text="Log in"
+        android:gravity="center"/>
+
+    <TextView
+        style="@style/text_normal"
+        android:text="Forgot Password"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="@dimen/large_space"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>

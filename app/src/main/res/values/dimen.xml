@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="root_padding">16dp</dimen>
+    <dimen name="box_space">20dp</dimen>
+    <dimen name="big_space">30dp</dimen>
+    <dimen name="large_space">40dp</dimen>
+    <dimen name="drawable_pad">16dp</dimen>
+    <dimen name="box_pad">4dp</dimen>
+    <dimen name="normal_text">18dp</dimen>
+    <dimen name="elev">4dp</dimen>
+    <dimen name="marginTop_firstText">40dp</dimen>
+    <dimen name="extraLarge_space">60dp</dimen>
+    <dimen name="drawable_leftOfImg">30dp</dimen>
+    <dimen name="img_height">150dp</dimen>
+    <dimen name="img_width">120dp</dimen>
+    <dimen name="smallButton_padding">10dp</dimen>
+    <dimen name="pad">10dp</dimen>
+</resources>
